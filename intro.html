@@ -1,37 +1,136 @@
+<!DOCTYPE html>
 <HTML>
 
 <HEAD>
+    <TITLE>BetteRoads</TITLE>
 
-<TITLE>Your Title Here</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 150px;
+}
+
+.menu{
+position: fixed;
+display: flex;
+justify-content: space-around;
+align-items:center;
+background-color; #fff;
+width: 100%;
+}
+
+.menu a{
+font-size: 30px;
+padding: 0px;
+color: #333;
+font-width: 700;
+text-decoration: none;
+background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+
+
+.content .Selection:nth-child(1){
+background-color: #ff7275;
+}
+.content .Selection:nth-child(2){
+background-color: #f37675;
+}
+.content .Selection:nth-child(3){
+background-color: #f37275;
+}
+
+
+
+
+
+</style>
 
 </HEAD>
+<BODY>
 
-<BODY BGCOLOR="FFFFFF">
+<div class="container">
 
-<CENTER><IMG SRC="clouds.jpg" ALIGN="BOTTOM"> </CENTER>
+    <new class="menu">
+    <a herf="#intro">&nbsp&nbsp&nbsp&nbsp  Intro&nbsp&nbsp</a>
+    <a herf="#work">How this work</a>
+    <a herf="#contribute">Contribute</a>
+    <a herf="#IWasHere">I was Here</a>
+</new>
+  <img src="E:\manish-sin.github.io\road_images\road2.jpeg" alt="Snow" style="width:100%;">
+  <div class="centered">Betteroads</div>
+    <div class="centered" style="font-size:30px;top:450px;background-color: rgba(255, 255, 255, 0.6);color: #f55"><a href="index.html">Go to the map</a> </div>
+</div>
 
-<HR>
 
-<a href="http://somegreatsite.com">Link Name</a>
 
-is a link to another nifty site
 
-<H1>This is a Header</H1>
 
-<H2>This is a Medium Header</H2>
 
-Send me mail at <a href="mailto:support@yourcompany.com">
+<div class="content">
 
-support@yourcompany.com</a>.
 
-<P> This is a new paragraph!
+    <section id="intro" class="Selection">
+        <h1>Intro</h1>
+        <div id="introtext" style="position:relative;left:100px;top:200px;color:#fff;font-size: 25px">
+        <p>This video shows what problem Betteroads is trying to address</p>
+            </div>
 
-<P> <B>This is a new paragraph!</B>
+        <iframe style="position:relative;left:850px;top: -40px"; width=50% height="500" src="https://www.youtube.com/embed/NA_L_FwD-Rc?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
 
-<BR> <B><I>This is a new sentence without a paragraph break, in bold italics.</I></B>
 
-<HR>
+    <section id="work" class="Selection"><h1>How This works</h1>
+        <div id="worktext" style="position:relative;left:1000px;top:200px;color:#fff;font-size: 25px">
+        <p>How it works</p>
+            </div>
+        <img style="position:relative;left:30px;top: -40px" src="E:\manish-sin.github.io\road_images\API_development.PNG" alt="How This work" width=50% height="500">
+    </section>
+
+
+    <section id="contribute" class="Selection"><h1>Contribute</h1>
+        <div id="contributetext" style="position:relative;left:100px;top:200px;color:#fff;font-size: 25px">
+        <p>THis video Gives way ahead for Betteroads</p>
+            <p>COntributors from various field Can contribute</p>
+            </div>
+
+    <iframe style="position:relative;left:850px;top: -40px" width=50% height="500" src="https://www.youtube.com/embed/5q8VHzHVgp0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+
+    <section id="IWasHere" class="Selection"><h1>I was Here</h1>
+        <div id="Iwasheretext" style="position:relative;left:1000px;top:200px;color:#000;font-size: 25px">
+        <p>Fill in your detail, We will contact you when project starts</p>
+            </div>
+    <<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfJ3Bal6981el-56wYVHIqO-MKaPS4xjf8Lg4mHo01PzklxOQ/viewform?embedded=true" width=50% height="706" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+</div>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+        $(".menu a").on('click', function(){
+        $("html, body").animate({
+        scrollTop: $($.attr(this, 'herf')).offset().top
+        }, 500);
+        });
+        });
+    </script>
 
 </BODY>
-
 </HTML>
